@@ -21,16 +21,6 @@ array = x.values
 A = array[:, 1:]
 B = array[:, 0]
 
-# A_df = pd.DataFrame(A)
-#
-# Q1 = A_df.quantile(0.25,axis=1)
-# Q3 = A_df.quantile(0.75,axis=1)
-# IQR = Q3 - Q1
-# print(IQR)
-#
-# #print((A_df < (Q1 - 1.5 * IQR)) |(A_df > (Q3 + 1.5 * IQR)))
-#
-# A_df_out = A_df[~((A_df < (Q1 - 1.5 * IQR)) |(A_df > (Q3 + 1.5 * IQR))).any(axis=1)]
 
 validation_size=0.20
 seed=6
