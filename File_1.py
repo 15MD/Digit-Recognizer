@@ -21,6 +21,7 @@ array = x.values
 A = array[:, 1:]
 B = array[:, 0]
 
+#Adding Outlier 
 
 validation_size=0.20
 seed=6
