@@ -10,8 +10,8 @@ from sklearn.preprocessing import StandardScaler
 from scipy import stats
 
 x = pd.read_csv("//home//mohit//Music//Kaggal//digit-recognizer/train.csv")
-
- print(x.isnull().values.any())
+y = pd.read_csv("//home//mohit//Music//Kaggal//digit-recognizer/test.csv")
+print(x.isnull().values.any())
 
 # from sklearn.preprocessing import RobustScaler
 # scaler = RobustScaler()
@@ -49,5 +49,7 @@ print(accuracy)
 cm = confusion_matrix(B_test, svm_predictions)
 print(cm)
 
+#svm_predictions = svm_model.predict(y)
 
+	
 
