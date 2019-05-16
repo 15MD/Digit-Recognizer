@@ -51,5 +51,8 @@ print(cm)
 
 #svm_predictions = svm_model.predict(y)
 
-	
+# submission
+	submissions = pd.DataFrame({"ImageId": list(range(1,len(svm_predictions)+1)),
+			    "Label": svm_predictions})
+	submissions.to_csv("Submission.csv", index=False, header=True)
 
