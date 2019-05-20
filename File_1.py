@@ -40,6 +40,12 @@ validation_size=0.20
 seed=6
 A_train,A_test,B_train,B_test=model_selection.train_test_split(A,B,test_size=validation_size,random_state=seed)
 
+# from sklearn.svm import SVC
+# param_grid = {'C':[0.01,0.1,0.0001,0.00001],'gamma':[1,0.1,0.001,0.0001], 'kernel':['linear','rbf']}
+# grid = GridSearchCV(SVC(),param_grid,refit = True, verbose=2)
+# grid.fit(A_train,B_train)
+#
+# print(grid.best_params_)
 
 svm_model=SVC(C=0.001,kernel="linear").fit(A_train,B_train)
 svm_predictions = svm_model.predict(A_test)
