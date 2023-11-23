@@ -22,6 +22,7 @@ A = array[:, 1:]
 B = array[:, 0]
 
 #Adding Outlier 
+#adding to test
 
 # A_df = pd.DataFrame(A)
 #
